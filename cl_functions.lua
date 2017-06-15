@@ -1,6 +1,6 @@
 -- @Date:   2017-06-14T18:57:49+02:00
 -- @Project: FiveM Tools
--- @Last modified time: 2017-06-14T21:32:04+02:00
+-- @Last modified time: 2017-06-15T16:29:46+02:00
 -- @License: GNU General Public License v3.0
 
 Markers = {}
@@ -33,8 +33,8 @@ function Generator(data)
   Citizen.CreateThread(function()
 
     if type(data) == "table" then
-      for name, data in pairs(data) do
-        Add(name, data)
+      for name, value in pairs(data) do
+        Add(name, value)
       end
     end
 
